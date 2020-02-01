@@ -6,8 +6,6 @@ require('../products/products-schema.js');
 
 const categories = mongoose.Schema({
   name: {type : Array , require : true },
-  kills : {type : Number , require : true},
-  titles : {type : Array , require : true },
 }, {toObject: {virtuals: true}, toJSON: {virtuals: true}});
 
 categories.virtual('productsNames' , {

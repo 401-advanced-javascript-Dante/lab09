@@ -15,7 +15,7 @@ describe('Categories API', () => {
   });
 
   it('get with id works' , ()=> {
-    let newVal = { name: 'DanTe' , kills : 99 , titles : [ 'Demon-hunter', 'MR-Cool', 'Savior', 'My Hero']};
+    let newVal = { name: 'DanTe' };
     return mockRequest.post('/api/v1/categories')
       .send(newVal)
       .then(data => {
@@ -32,18 +32,18 @@ describe('Categories API', () => {
 
 
   it('post works' , ()=> {
-    let newVal = { name: 'DanTe' , kills : 99 , titles : [ 'Demon-hunter', 'MR-Cool', 'Savior', 'My Hero']};
+    let newVal = { name: 'DanTe'};
     return mockRequest.post('/api/v1/categories')
       .send(newVal)
       .then(data => {
-        expect(data.body.kills).toBe(99);
+        expect(data.body.name[0]).toBe('DanTe');
       });
   });
 
 
   it('update works' , ()=> {
-    let newVal = { name: 'DanTe' , kills : 99 , titles : [ 'Demon-hunter', 'MR-Cool', 'Savior', 'My Hero']};
-    let updated = { name: 'Nero' , kills : 0 , titles : [ 'dead weight']};
+    let newVal = { name: 'DanTe'};
+    let updated = { name: 'Nero'};
 
     return mockRequest.post('/api/v1/categories')
       .send(newVal)
@@ -61,7 +61,7 @@ describe('Categories API', () => {
 
 
   it('delete works' , ()=> {
-    let newVal = { name: 'DanTe' , kills : 99 , titles : [ 'Demon-hunter', 'MR-Cool', 'Savior', 'My Hero']};
+    let newVal = { name: 'DanTe'};
     return mockRequest.post('/api/v1/categories')
       .send(newVal)
       .then(data => {
