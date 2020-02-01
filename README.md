@@ -7,10 +7,8 @@
 
 ### Links and Resources
 
-- [submission PR](https://github.com/401-advanced-javascript-Dante/lab08/pull/1)
-- [ci/cd](https://github.com/401-advanced-javascript-Dante/lab08/actions/runs/32802579) (GitHub Actions)
-
-### Setup
+- [submission PR](https://github.com/401-advanced-javascript-Dante/lab09/pull/1)
+- [ci/cd](https://github.com/401-advanced-javascript-Dante/lab09/actions/runs/33746360) (GitHub Actions)
 
 
 #### How to initialize/run your application (where applicable)
