@@ -12,8 +12,8 @@ categories.virtual('productsNames' , {
   ref: 'products',
   localField: 'name',
   foreignField: 'name',
-  justOne: true
-})
+  justOne: true,
+});
 
 function link(){
   try{
